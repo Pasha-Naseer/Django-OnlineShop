@@ -183,6 +183,7 @@ class UserRegistrationForm(forms.Form):
     last_name = forms.CharField(max_length=225)
 
     password = forms.CharField(widget=forms.PasswordInput, validators=[MinLengthValidator(8)])
+    confirm_password = forms.CharField(widget=forms.PasswordInput, validators=[MinLengthValidator(8)])
 
     def __init__(self, *args, **kwargs):
 
@@ -205,9 +206,22 @@ class UserRegistrationForm(forms.Form):
 
         self.fields['password'].widget.attrs['class'] = 'form-control'
         self.fields['password'].widget.attrs['placeholder'] = 'رمز'
-
         self.fields['password'].label = ''
         self.fields['password'].help_text = '<ul class="form-text text-muted small"><li>رمزتان نباید با سایر اطلاعات شما مشابه باشد</li><li>رمزتان باید حداقل دارای 8 کاراکتر باشد</li><li>رمزتان نباید رمز رایجی باشد</li><li>رمزتان نباید تماما عددی باشد</li></ul>'
+
+        self.fields['confirm_password'].widget.attrs['class'] = 'form-control'
+        self.fields['confirm_password'].widget.attrs['placeholder'] = 'تکرار رمز'
+        self.fields['confirm_password'].label = ''
+
+    def clean(self):
+        cleaned_data = super().clean()
+        password = cleaned_data.get('password')
+        confirm_password = cleaned_data.get('confirm_password')
+
+        if password and confirm_password and password != confirm_password:
+            raise ValidationError("Passwords do not match")
+
+        return cleaned_data
 
     def clean_email(self):
         email = self.cleaned_data['email']
@@ -226,7 +240,6 @@ class UserRegistrationForm(forms.Form):
         user = User.objects.filter(username=username).exists()
         if user:
             raise ValidationError("Username Already Exists")
-
 
 # is
 class VerifyCodeForm(forms.Form):

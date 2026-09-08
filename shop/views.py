@@ -162,19 +162,19 @@ class UserRegisterView(View):
     form_class = UserRegistrationForm
 
     def get(self, request):
-        form = self.form_class
-        return render(request,'shop/register.html', {'form': form})
+        form = self.form_class()  # <-- was missing parentheses, this was a bug
+        return render(request, 'shop/register.html', {'form': form})
 
     def post(self, request):
         form = self.form_class(request.POST)
         if form.is_valid():
             while OtpCode.objects.filter(phone_number=form.cleaned_data['phone_number']).exists():
-                OtpCode.objects.get(phone_number=form.cleaned_data['phone_number']).delete()
+                OtpCode.objects.filter(phone_number=form.cleaned_data['phone_number']).delete()  # <-- .get() would crash if 2+ rows match
+
             random_code = random.randint(1000, 9999)
-
             send_otp_code(form.cleaned_data['phone_number'], random_code)
-
             OtpCode.objects.create(phone_number=form.cleaned_data['phone_number'], code=random_code)
+
             request.session['user_registration_info'] = {
                 'username': form.cleaned_data['my_username'],
                 'phone_number': form.cleaned_data['phone_number'],
@@ -185,7 +185,8 @@ class UserRegisterView(View):
             }
             messages.success(request, 'کدی برای شما ارسال شد', 'success')
             return redirect('shop:verify_code')
-        messages.success(request,"فرم خود را بازبینی کنید", 'success')
+
+        messages.error(request, "فرم خود را بازبینی کنید", 'error')  # <-- was messages.success on a failure path
         return redirect('shop:register')
 
 

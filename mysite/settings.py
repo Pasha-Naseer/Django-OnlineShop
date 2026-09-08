@@ -155,3 +155,7 @@ CKEDITOR_5_CONFIGS = {
 MERCHANT = "131e5305-705e-4db9-95d1-3b18da914c86"
 
 SANDBOX = True
+
+# delete later
+# import secrets
+# print(secrets.token_urlsafe(50))

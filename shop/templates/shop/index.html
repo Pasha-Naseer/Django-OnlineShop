@@ -4,22 +4,22 @@
 
 <style>
   .homepage {
-    --hana-burgundy: #6d1128;
-    --hana-burgundy-deep: #4a0b1c;
-    --hana-rose: #b3364f;
-    --hana-gold: #c9a15a;
-    --hana-gold-soft: #e9d8b6;
-    --hana-cream: #faf6f0;
-    --hana-ink: #2b2320;
-    --hana-muted: #8a7d74;
-    --hana-line: #ece3d8;
-    --hana-radius-lg: 22px;
-    --hana-radius-md: 14px;
-    --hana-shadow-sm: 0 4px 16px rgba(74, 11, 28, 0.06);
-    --hana-shadow-md: 0 10px 30px rgba(74, 11, 28, 0.10);
-    --hana-shadow-lg: 0 18px 45px rgba(74, 11, 28, 0.16);
-    background: var(--hana-cream);
-    color: var(--hana-ink);
+    --BrandName-burgundy: #6d1128;
+    --BrandName-burgundy-deep: #4a0b1c;
+    --BrandName-rose: #b3364f;
+    --BrandName-gold: #c9a15a;
+    --BrandName-gold-soft: #e9d8b6;
+    --BrandName-cream: #faf6f0;
+    --BrandName-ink: #2b2320;
+    --BrandName-muted: #8a7d74;
+    --BrandName-line: #ece3d8;
+    --BrandName-radius-lg: 22px;
+    --BrandName-radius-md: 14px;
+    --BrandName-shadow-sm: 0 4px 16px rgba(74, 11, 28, 0.06);
+    --BrandName-shadow-md: 0 10px 30px rgba(74, 11, 28, 0.10);
+    --BrandName-shadow-lg: 0 18px 45px rgba(74, 11, 28, 0.16);
+    background: var(--BrandName-cream);
+    color: var(--BrandName-ink);
     font-family: 'VAZIRmatn', sans-serif;
   }
 
@@ -28,47 +28,47 @@
   .homepage a { transition: all .25s ease; }
 
   /* ---------- Section rhythm ---------- */
-  .homepage .hana-section {
+  .homepage .BrandName-section {
     padding: 72px 0;
   }
-  .homepage .hana-section + .hana-section { padding-top: 0; }
+  .homepage .BrandName-section + .BrandName-section { padding-top: 0; }
 
   /* ---------- Eyebrow + title ---------- */
-  .homepage .hana-eyebrow {
+  .homepage .BrandName-eyebrow {
     display: inline-block;
     font-size: .8rem;
     letter-spacing: 3px;
-    color: var(--hana-gold);
+    color: var(--BrandName-gold);
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 700;
   }
-  .homepage .hana-heading {
+  .homepage .BrandName-heading {
     font-weight: 800;
-    color: var(--hana-burgundy);
+    color: var(--BrandName-burgundy);
     position: relative;
     display: inline-block;
     margin-bottom: 14px;
   }
-  .homepage .hana-heading::after {
+  .homepage .BrandName-heading::after {
     content: "";
     display: block;
     width: 56px;
     height: 3px;
-    background: var(--hana-gold);
+    background: var(--BrandName-gold);
     border-radius: 3px;
     margin: 14px auto 0;
   }
-  .homepage .hana-subtext {
-    color: var(--hana-muted);
+  .homepage .BrandName-subtext {
+    color: var(--BrandName-muted);
     font-size: .98rem;
     max-width: 560px;
     margin: 0 auto;
   }
-  .homepage .hana-header-block { text-align: center; margin-bottom: 46px; }
+  .homepage .BrandName-header-block { text-align: center; margin-bottom: 46px; }
 
   /* ---------- Buttons ---------- */
-  .homepage .hana-btn {
+  .homepage .BrandName-btn {
     display: inline-block;
     padding: 13px 34px;
     border-radius: 999px;
@@ -78,58 +78,58 @@
     border: 1px solid transparent;
     cursor: pointer;
   }
-  .homepage .hana-btn-primary {
-    background: var(--hana-burgundy);
+  .homepage .BrandName-btn-primary {
+    background: var(--BrandName-burgundy);
     color: #fff;
-    box-shadow: var(--hana-shadow-sm);
+    box-shadow: var(--BrandName-shadow-sm);
   }
-  .homepage .hana-btn-primary:hover {
-    background: var(--hana-burgundy-deep);
-    box-shadow: var(--hana-shadow-md);
+  .homepage .BrandName-btn-primary:hover {
+    background: var(--BrandName-burgundy-deep);
+    box-shadow: var(--BrandName-shadow-md);
     transform: translateY(-2px);
     color: #fff;
   }
-  .homepage .hana-btn-ghost {
+  .homepage .BrandName-btn-ghost {
     background: #fff;
-    color: var(--hana-burgundy);
-    border-color: var(--hana-line);
+    color: var(--BrandName-burgundy);
+    border-color: var(--BrandName-line);
   }
-  .homepage .hana-btn-ghost:hover {
-    border-color: var(--hana-gold);
-    color: var(--hana-burgundy-deep);
+  .homepage .BrandName-btn-ghost:hover {
+    border-color: var(--BrandName-gold);
+    color: var(--BrandName-burgundy-deep);
     transform: translateY(-2px);
   }
-  .homepage .hana-btn-light {
+  .homepage .BrandName-btn-light {
     background: rgba(255,255,255,.14);
     color: #fff;
     border-color: rgba(255,255,255,.35);
   }
-  .homepage .hana-btn-light:hover {
+  .homepage .BrandName-btn-light:hover {
     background: #fff;
-    color: var(--hana-burgundy);
+    color: var(--BrandName-burgundy);
   }
 
   /* ---------- Billboard ---------- */
-  .homepage #billboard { background: var(--hana-cream) !important; padding: 64px 0 20px; }
-  .homepage .hana-logo-wrap img {
+  .homepage #billboard { background: var(--BrandName-cream) !important; padding: 64px 0 20px; }
+  .homepage .BrandName-logo-wrap img {
     border-radius: 24px;
-    box-shadow: var(--hana-shadow-md);
+    box-shadow: var(--BrandName-shadow-md);
     border: 4px solid #fff;
   }
 
   /* ---------- Collection cards (categories) ---------- */
   .homepage .collection-card {
     background: #fff;
-    border-radius: var(--hana-radius-md);
-    border: 1px solid var(--hana-line);
-    box-shadow: var(--hana-shadow-sm);
+    border-radius: var(--BrandName-radius-md);
+    border: 1px solid var(--BrandName-line);
+    box-shadow: var(--BrandName-shadow-sm);
     transition: transform .3s ease, box-shadow .3s ease;
     height: 100%;
   }
   .homepage .collection-card:hover {
     transform: translateY(-6px);
-    box-shadow: var(--hana-shadow-md);
-    border-color: var(--hana-gold-soft);
+    box-shadow: var(--BrandName-shadow-md);
+    border-color: var(--BrandName-gold-soft);
   }
   .homepage .collection-image img {
     aspect-ratio: 1 / 1;
@@ -137,13 +137,13 @@
     width: 100%;
   }
   .homepage .collection-content h5 a {
-    color: var(--hana-burgundy) !important;
+    color: var(--BrandName-burgundy) !important;
   }
   .homepage .collection-content p {
-    color: var(--hana-muted) !important;
+    color: var(--BrandName-muted) !important;
     min-height: 20px;
   }
-  .homepage .hana-badge {
+  .homepage .BrandName-badge {
     display: inline-block;
     border-radius: 999px;
     padding: 5px 14px;
@@ -151,67 +151,67 @@
     font-weight: 700;
     letter-spacing: .3px;
   }
-  .homepage .hana-badge-in { background: var(--hana-gold-soft); color: #6b4e1c; }
-  .homepage .hana-badge-out { background: #ece7e2; color: #8a7d74; }
+  .homepage .BrandName-badge-in { background: var(--BrandName-gold-soft); color: #6b4e1c; }
+  .homepage .BrandName-badge-out { background: #ece7e2; color: #8a7d74; }
 
   /* ---------- Search card ---------- */
-  .homepage .hana-search-card {
-    border: 1px solid var(--hana-line);
-    border-radius: var(--hana-radius-lg);
+  .homepage .BrandName-search-card {
+    border: 1px solid var(--BrandName-line);
+    border-radius: var(--BrandName-radius-lg);
     overflow: hidden;
-    box-shadow: var(--hana-shadow-sm);
+    box-shadow: var(--BrandName-shadow-sm);
   }
-  .homepage .hana-search-card .card-header {
-    background: var(--hana-burgundy) !important;
+  .homepage .BrandName-search-card .card-header {
+    background: var(--BrandName-burgundy) !important;
     color: #fff !important;
     font-weight: 700;
     border: none;
     padding: 16px 20px;
     letter-spacing: .5px;
   }
-  .homepage .hana-search-card .card-body { padding: 24px; background: #fff; }
-  .homepage .hana-search-card input {
+  .homepage .BrandName-search-card .card-body { padding: 24px; background: #fff; }
+  .homepage .BrandName-search-card input {
     border-radius: 10px !important;
-    border: 1px solid var(--hana-line);
+    border: 1px solid var(--BrandName-line);
     padding: 12px 14px;
   }
-  .homepage .hana-search-card input:focus {
-    border-color: var(--hana-gold);
+  .homepage .BrandName-search-card input:focus {
+    border-color: var(--BrandName-gold);
     box-shadow: 0 0 0 3px rgba(201,161,90,.2);
   }
-  .homepage .hana-search-card button {
+  .homepage .BrandName-search-card button {
     border-radius: 10px !important;
-    background: var(--hana-burgundy) !important;
+    background: var(--BrandName-burgundy) !important;
     border: none;
     font-weight: 700;
     padding: 10px 26px !important;
   }
-  .homepage .hana-search-card button:hover { background: var(--hana-burgundy-deep) !important; }
+  .homepage .BrandName-search-card button:hover { background: var(--BrandName-burgundy-deep) !important; }
 
   /* Search results */
   .homepage .banner-item {
     background: #fff;
-    border-radius: var(--hana-radius-md);
-    border: 1px solid var(--hana-line);
-    box-shadow: var(--hana-shadow-sm);
+    border-radius: var(--BrandName-radius-md);
+    border: 1px solid var(--BrandName-line);
+    box-shadow: var(--BrandName-shadow-sm);
   }
-  .homepage .banner-content h5 a { color: var(--hana-burgundy) !important; }
+  .homepage .banner-content h5 a { color: var(--BrandName-burgundy) !important; }
 
   /* ---------- New arrival / sale section ---------- */
   .homepage #new-arrival { background: #fff; }
-  .homepage #new-arrival h4 { color: var(--hana-burgundy) !important; }
-  .homepage #new-arrival p { color: var(--hana-muted) !important; }
+  .homepage #new-arrival h4 { color: var(--BrandName-burgundy) !important; }
+  .homepage #new-arrival p { color: var(--BrandName-muted) !important; }
   .homepage .product-item {
     background: #fff;
-    border-radius: var(--hana-radius-md);
-    border: 1px solid var(--hana-line);
-    box-shadow: var(--hana-shadow-sm);
+    border-radius: var(--BrandName-radius-md);
+    border: 1px solid var(--BrandName-line);
+    box-shadow: var(--BrandName-shadow-sm);
     overflow: hidden;
     transition: transform .3s ease, box-shadow .3s ease;
   }
   .homepage .product-item:hover {
     transform: translateY(-6px);
-    box-shadow: var(--hana-shadow-md);
+    box-shadow: var(--BrandName-shadow-md);
   }
   .homepage .product-item .image-holder img {
     border-bottom: none !important;
@@ -219,14 +219,14 @@
     object-fit: cover;
   }
   .homepage .product-item .product-content h5 a {
-    color: var(--hana-ink) !important;
+    color: var(--BrandName-ink) !important;
     font-size: 1rem;
   }
 
   /* ---------- Collection / brand story ---------- */
   .homepage section.collection {
-    background: linear-gradient(160deg, var(--hana-burgundy) 0%, var(--hana-burgundy-deep) 100%) !important;
-    border-radius: var(--hana-radius-lg);
+    background: linear-gradient(160deg, var(--BrandName-burgundy) 0%, var(--BrandName-burgundy-deep) 100%) !important;
+    border-radius: var(--BrandName-radius-lg);
     margin: 0 auto;
   }
   .homepage section.collection .title-xlarge {
@@ -238,81 +238,81 @@
     display: block;
     width: 64px;
     height: 3px;
-    background: var(--hana-gold);
+    background: var(--BrandName-gold);
     margin: 18px auto 0;
     border-radius: 3px;
   }
   .homepage section.collection .image-holder {
-    box-shadow: var(--hana-shadow-lg) !important;
+    box-shadow: var(--BrandName-shadow-lg) !important;
   }
   .homepage section.collection .column-container.bg-white {
     background: rgba(255,255,255,.06) !important;
     border: 1px solid rgba(255,255,255,.14) !important;
   }
-  .homepage section.collection h3 { color: var(--hana-gold-soft) !important; }
+  .homepage section.collection h3 { color: var(--BrandName-gold-soft) !important; }
   .homepage section.collection p { color: rgba(255,255,255,.85) !important; }
 
   /* ---------- Video ---------- */
-  .homepage .video { background: var(--hana-cream); }
-  .homepage .video-content { border-radius: var(--hana-radius-lg); overflow: hidden; box-shadow: var(--hana-shadow-md); }
+  .homepage .video { background: var(--BrandName-cream); }
+  .homepage .video-content { border-radius: var(--BrandName-radius-lg); overflow: hidden; box-shadow: var(--BrandName-shadow-md); }
 
   /* ---------- Testimonials ---------- */
   .homepage .testimonials {
-    background: linear-gradient(160deg, var(--hana-burgundy) 0%, var(--hana-burgundy-deep) 100%) !important;
+    background: linear-gradient(160deg, var(--BrandName-burgundy) 0%, var(--BrandName-burgundy-deep) 100%) !important;
 
-    box-shadow: var(--hana-shadow-md);
+    box-shadow: var(--BrandName-shadow-md);
   }
   .homepage .testimonials .section-title { color: #fff !important; text-shadow: none !important; font-weight: 800; }
   .homepage .testimonial-item {
     background: #fff !important;
-    color: var(--hana-ink) !important;
-    border-radius: var(--hana-radius-md) !important;
-    box-shadow: var(--hana-shadow-sm) !important;
+    color: var(--BrandName-ink) !important;
+    border-radius: var(--BrandName-radius-md) !important;
+    box-shadow: var(--BrandName-shadow-sm) !important;
     position: relative;
   }
   .homepage .testimonial-item::before {
     content: "\201C";
     font-size: 3rem;
-    color: var(--hana-gold-soft);
+    color: var(--BrandName-gold-soft);
     position: absolute;
     top: 4px;
     right: 18px;
     line-height: 1;
     font-family: Georgia, serif;
   }
-  .homepage .testimonial-item p { color: var(--hana-ink) !important; font-style: normal !important; }
-  .homepage .testimonial-item .review-title { color: var(--hana-burgundy) !important; }
+  .homepage .testimonial-item p { color: var(--BrandName-ink) !important; font-style: normal !important; }
+  .homepage .testimonial-item .review-title { color: var(--BrandName-burgundy) !important; }
 
   /* ---------- Blog ---------- */
   .homepage .blog {
-    background: var(--hana-cream) !important;
+    background: var(--BrandName-cream) !important;
     box-shadow: none !important;
   }
-  .homepage .blog h4.text-uppercase { color: var(--hana-burgundy) !important; text-shadow: none !important; }
+  .homepage .blog h4.text-uppercase { color: var(--BrandName-burgundy) !important; text-shadow: none !important; }
   .homepage .blog .btn-link {
     background: #fff !important;
-    border: 1px solid var(--hana-line);
+    border: 1px solid var(--BrandName-line);
     box-shadow: none !important;
   }
   .homepage .post-item {
     background: #fff !important;
-    border-radius: var(--hana-radius-md) !important;
-    box-shadow: var(--hana-shadow-sm) !important;
-    border: 1px solid var(--hana-line);
+    border-radius: var(--BrandName-radius-md) !important;
+    box-shadow: var(--BrandName-shadow-sm) !important;
+    border: 1px solid var(--BrandName-line);
   }
-  .homepage .post-item:hover { transform: translateY(-6px); box-shadow: var(--hana-shadow-md) !important; }
+  .homepage .post-item:hover { transform: translateY(-6px); box-shadow: var(--BrandName-shadow-md) !important; }
   .homepage .post-image img { border-bottom: none !important; }
-  .homepage .post-title a { color: var(--hana-burgundy) !important; }
-  .homepage .post-meta { color: var(--hana-muted) !important; }
+  .homepage .post-title a { color: var(--BrandName-burgundy) !important; }
+  .homepage .post-meta { color: var(--BrandName-muted) !important; }
 
   /* ---------- Logo bar ---------- */
-  .homepage .logo-bar { background: #fff; border-top: 1px solid var(--hana-line); border-bottom: 1px solid var(--hana-line); }
+  .homepage .logo-bar { background: #fff; border-top: 1px solid var(--BrandName-line); border-bottom: 1px solid var(--BrandName-line); }
   .homepage .logo-image { opacity: .55; filter: grayscale(100%); transition: opacity .25s ease, filter .25s ease; max-height: 46px; width: auto; }
   .homepage .logo-image:hover { opacity: 1; filter: grayscale(0%); }
 
   /* ---------- Features ---------- */
   .homepage .features {
-    background: linear-gradient(160deg, var(--hana-burgundy) 0%, var(--hana-burgundy-deep) 100%) !important;
+    background: linear-gradient(160deg, var(--BrandName-burgundy) 0%, var(--BrandName-burgundy-deep) 100%) !important;
 
   }
   .homepage .features .feature-box {
@@ -324,7 +324,7 @@
   }
   .homepage .features .feature-box:hover {
     background: rgba(255,255,255,.09) !important;
-    border-color: var(--hana-gold) !important;
+    border-color: var(--BrandName-gold) !important;
     transform: translateY(-4px);
   }
   .homepage .features .feature-icon {
@@ -339,35 +339,35 @@
   .homepage .features p { color: rgba(255,255,255,.78) !important; font-size: .92rem !important; }
 
   /* ---------- Instagram ---------- */
-  .homepage .instagram { background: var(--hana-cream); padding-bottom: 90px; }
+  .homepage .instagram { background: var(--BrandName-cream); padding-bottom: 90px; }
   .homepage .insta-item { overflow: hidden; position: relative; }
   .homepage .insta-image { transition: transform .4s ease; }
   .homepage .insta-item:hover .insta-image { transform: scale(1.08); }
-  .homepage .instagram .hana-btn-primary { position: relative; z-index: 2; }
+  .homepage .instagram .BrandName-btn-primary { position: relative; z-index: 2; }
 
   /* ---------- Trust seal ---------- */
-  .homepage .hana-trust { text-align: center; padding: 30px 0 10px; }
+  .homepage .BrandName-trust { text-align: center; padding: 30px 0 10px; }
 
   @media (max-width: 767px) {
-    .homepage .hana-section { padding: 48px 0; }
+    .homepage .BrandName-section { padding: 48px 0; }
     .homepage section.collection .title-xlarge { font-size: 1.8rem !important; }
   }
 </style>
 
 <body class="homepage">
 
-  <section id="billboard" class="hana-section">
+  <section id="billboard" class="BrandName-section">
     <div class="container text-center">
 
       <!-- Logo -->
-      <div class="mb-4 hana-logo-wrap" data-aos="zoom-in">
-        <img src="{% static 'images/cosmetics-logo.png' %}" width="140" height="140" alt="HANA Logo">
+      <div class="mb-4 BrandName-logo-wrap" data-aos="zoom-in">
+        <img src="{% static 'images/cosmetics-logo.png' %}" width="140" height="140" alt="BrandName Logo">
       </div>
 
       <!-- Title -->
-      <div class="hana-header-block" data-aos="fade-up">
-        <span class="hana-eyebrow">BRAND NAME</span>
-        <h1 class="hana-heading" style="font-size: 2.1rem;">نام برند</h1>
+      <div class="BrandName-header-block" data-aos="fade-up">
+        <span class="BrandName-eyebrow">BRAND NAME</span>
+        <h1 class="BrandName-heading" style="font-size: 2.1rem;">نام برند</h1>
       </div>
 
       <!-- Categories -->
@@ -395,9 +395,9 @@
 
                 <!-- Availability Badge -->
                 {% if collection.is_available %}
-                  <span class="hana-badge hana-badge-in">موجود</span>
+                  <span class="BrandName-badge BrandName-badge-in">موجود</span>
                 {% else %}
-                  <span class="hana-badge hana-badge-out">ناموجود</span>
+                  <span class="BrandName-badge BrandName-badge-out">ناموجود</span>
                 {% endif %}
               </div>
             </div>
@@ -407,7 +407,7 @@
 
       <!-- Search Card -->
       <div class="col-md-6 mx-auto my-5">
-        <div class="hana-search-card">
+        <div class="BrandName-search-card">
           <div class="card-header">جست و جو</div>
           <div class="card-body">
             <form method="POST" action="{% url 'shop:search' %}">
@@ -448,13 +448,13 @@
                   </h5>
 
                   {% if product.description %}
-                  <p style="color:var(--hana-muted); font-size:0.9rem;">{{ product.description }}</p>
+                  <p style="color:var(--BrandName-muted); font-size:0.9rem;">{{ product.description }}</p>
                   {% endif %}
 
                   {% if product.is_available %}
-                  <span class="hana-badge hana-badge-in">موجود</span>
+                  <span class="BrandName-badge BrandName-badge-in">موجود</span>
                   {% else %}
-                  <span class="hana-badge hana-badge-out">ناموجود</span>
+                  <span class="BrandName-badge BrandName-badge-out">ناموجود</span>
                   {% endif %}
                 </div>
               </div>
@@ -481,13 +481,13 @@
 
   </section>
 
-  <section id="new-arrival" class="hana-section product-carousel position-relative overflow-hidden">
+  <section id="new-arrival" class="BrandName-section product-carousel position-relative overflow-hidden">
     <div class="container">
 
-      <div class="hana-header-block">
-        <span class="hana-eyebrow" style="padding-top:50px;">SPECIAL OFFERS</span>
-        <h4 class="hana-heading text-uppercase" style="font-size: 1.9rem;">جشنواره فروش</h4>
-        <p class="hana-subtext">تخفیف‌های ویژه</p>
+      <div class="BrandName-header-block">
+        <span class="BrandName-eyebrow" style="padding-top:50px;">SPECIAL OFFERS</span>
+        <h4 class="BrandName-heading text-uppercase" style="font-size: 1.9rem;">جشنواره فروش</h4>
+        <p class="BrandName-subtext">تخفیف‌های ویژه</p>
       </div>
 
       <!-- Swiper Slider -->
@@ -522,13 +522,13 @@
         <div class="swiper-pagination" style="margin-top: 20px;"></div>
         <div class="icon-arrow icon-arrow-left"
              style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); cursor: pointer;">
-          <svg width="44" height="44" viewBox="0 0 24 24" style="fill: var(--hana-burgundy);">
+          <svg width="44" height="44" viewBox="0 0 24 24" style="fill: var(--BrandName-burgundy);">
             <use xlink:href="#arrow-left"></use>
           </svg>
         </div>
         <div class="icon-arrow icon-arrow-right"
              style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer;">
-          <svg width="44" height="44" viewBox="0 0 24 24" style="fill: var(--hana-burgundy);">
+          <svg width="44" height="44" viewBox="0 0 24 24" style="fill: var(--BrandName-burgundy);">
             <use xlink:href="#arrow-right"></use>
           </svg>
         </div>
@@ -536,7 +536,7 @@
     </div>
   </section>
 
-  <section class="collection hana-section position-relative" style="border-radius: 0px">
+  <section class="collection BrandName-section position-relative" style="border-radius: 0px">
     <div class="container" style="max-width: 1140px; padding: 60px 20px;">
       <div class="row" style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center;">
 
@@ -564,14 +564,14 @@
               <p style="font-size:18px">
 لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
               </p>
-              <a href="#" class="hana-btn hana-btn-light text-uppercase mt-3">کالکشن محصولات</a>
+              <a href="#" class="BrandName-btn BrandName-btn-light text-uppercase mt-3">کالکشن محصولات</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="section-header text-center">
-      <span class="hana-eyebrow" style="color: var(--hana-gold-soft);">FEEDBACK</span>
+      <span class="BrandName-eyebrow" style="color: var(--BrandName-gold-soft);">FEEDBACK</span>
       <h3 class="section-title">ما عاشق پیشنهاداتتون هستیم</h3>
     </div>
     <div class="swiper testimonial-swiper overflow-hidden my-5">
@@ -593,12 +593,12 @@
 
     <div class="testimonial-swiper-pagination d-flex justify-content-center mb-5"></div>
     <div class="text-center">
-      <a href="{% url 'shop:comment' %}" class="hana-btn hana-btn-light">ثبت کامنت</a>
+      <a href="{% url 'shop:comment' %}" class="BrandName-btn BrandName-btn-light">ثبت کامنت</a>
     </div>
 
   </section>
 
-<!--  <section class="video hana-section overflow-hidden">-->
+<!--  <section class="video BrandName-section overflow-hidden">-->
 <!--    <div class="container-fluid">-->
 <!--      <div class="row">-->
 <!--        <div class="video-content open-up" data-aos="zoom-out">-->
@@ -620,11 +620,11 @@
 
 
 
-  <section class="blog hana-section" style="padding-top:20px;">
+  <section class="blog BrandName-section" style="padding-top:20px;">
     <div class="container">
       <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
         <div>
-          <span class="hana-eyebrow">HANA JOURNAL</span>
+          <span class="BrandName-eyebrow">BrandName JOURNAL</span>
           <h4 class="text-uppercase mb-0" style="font-size: 1.7rem;">وبلاگ های ما را بخوانید</h4>
         </div>
 
@@ -672,14 +672,14 @@
   </section>
 
   <!-- Features Section -->
-  <section class="features hana-section">
+  <section class="features BrandName-section">
     <div class="container" style="max-width: 1140px; padding: 60px 20px;">
       <div class="row g-4" style="display:flex; flex-wrap:wrap; gap:20px;">
 
         <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="0" style="flex: 1 1 22%;">
           <div class="feature-box">
             <div class="feature-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--hana-gold);">
+              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--BrandName-gold);">
                 <use xlink:href="#calendar"></use>
               </svg>
             </div>
@@ -691,7 +691,7 @@
         <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="200" style="flex: 1 1 22%;">
           <div class="feature-box">
             <div class="feature-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--hana-gold);">
+              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--BrandName-gold);">
                 <use xlink:href="#shopping-bag"></use>
               </svg>
             </div>
@@ -703,7 +703,7 @@
         <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="400" style="flex: 1 1 22%;">
           <div class="feature-box">
             <div class="feature-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--hana-gold);">
+              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--BrandName-gold);">
                 <use xlink:href="#gift"></use>
               </svg>
             </div>
@@ -715,7 +715,7 @@
         <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="600" style="flex: 1 1 22%;">
           <div class="feature-box">
             <div class="feature-icon">
-              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--hana-gold);">
+              <svg width="26" height="26" viewBox="0 0 24 24" style="fill: var(--BrandName-gold);">
                 <use xlink:href="#arrow-cycle"></use>
               </svg>
             </div>
@@ -728,10 +728,10 @@
     </div>
   </section>
 
-  <section class="instagram hana-section position-relative">
+  <section class="instagram BrandName-section position-relative">
 
     <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1" style="margin-bottom: 20px;">
-      <a href="#" class="hana-btn hana-btn-primary">ما را در اینستاگرام دنبال کنید</a>
+      <a href="#" class="BrandName-btn BrandName-btn-primary">ما را در اینستاگرام دنبال کنید</a>
     </div>
 
     <div class="row g-0">
@@ -749,7 +749,7 @@
 
   </section>
 
-  <div class="hana-trust">
+  <div class="BrandName-trust">
     <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=639979&Code=E08CKVNQfvLgxCdq7tjGN2Z3aoFBfwbu'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=639979&Code=E08CKVNQfvLgxCdq7tjGN2Z3aoFBfwbu' alt='' style='cursor:pointer' code='E08CKVNQfvLgxCdq7tjGN2Z3aoFBfwbu'></a>
   </div>
 </body>

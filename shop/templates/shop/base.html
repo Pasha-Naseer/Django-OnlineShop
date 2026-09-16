@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 {% load static %}
 <head>
-  <title>Hana OnlineShop</title>
+  <title>BrandName OnlineShop</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,18 +29,18 @@
 
 <style>
   :root {
-    --hana-burgundy: #6d1128;
-    --hana-burgundy-deep: #4a0b1c;
-    --hana-rose: #b3364f;
-    --hana-gold: #c9a15a;
-    --hana-gold-soft: #e9d8b6;
-    --hana-cream: #faf6f0;
-    --hana-ink: #2b2320;
-    --hana-line: #ece3d8;
+    --BrandName-burgundy: #6d1128;
+    --BrandName-burgundy-deep: #4a0b1c;
+    --BrandName-rose: #b3364f;
+    --BrandName-gold: #c9a15a;
+    --BrandName-gold-soft: #e9d8b6;
+    --BrandName-cream: #faf6f0;
+    --BrandName-ink: #2b2320;
+    --BrandName-line: #ece3d8;
   }
 
-  footer.hana-footer {
-    background: linear-gradient(160deg, var(--hana-burgundy) 0%, var(--hana-burgundy-deep) 100%) !important;
+  footer.BrandName-footer {
+    background: linear-gradient(160deg, var(--BrandName-burgundy) 0%, var(--BrandName-burgundy-deep) 100%) !important;
     color: #fff !important;
 
     box-shadow: 0 -8px 30px rgba(74,11,28,.20) !important;
@@ -49,29 +49,29 @@
   }
 
   /* ---------- Logo + intro ---------- */
-  .hana-footer .hana-footer-logo img {
+  .BrandName-footer .BrandName-footer-logo img {
     border-radius: 50% !important;
-    border: 3px solid var(--hana-gold-soft) !important;
+    border: 3px solid var(--BrandName-gold-soft) !important;
     box-shadow: 0 4px 14px rgba(0,0,0,.3) !important;
     transition: transform .25s ease !important;
   }
-  .hana-footer .hana-footer-logo:hover img {
+  .BrandName-footer .BrandName-footer-logo:hover img {
     transform: scale(1.06) !important;
   }
-  .hana-footer .hana-footer-brand {
+  .BrandName-footer .BrandName-footer-brand {
     font-weight: 700 !important;
     color: #fff !important;
     margin-top: 16px !important;
   }
-  .hana-footer .hana-footer-tagline {
+  .BrandName-footer .BrandName-footer-tagline {
     color: rgba(255,255,255,.7) !important;
     font-size: .85rem !important;
     margin-top: 6px !important;
   }
 
   /* ---------- Widget titles ---------- */
-  .hana-footer .hana-widget-title {
-    color: var(--hana-gold-soft) !important;
+  .BrandName-footer .BrandName-widget-title {
+    color: var(--BrandName-gold-soft) !important;
     font-weight: 800 !important;
     text-transform: uppercase !important;
     letter-spacing: 1px !important;
@@ -81,81 +81,81 @@
     margin-bottom: 20px !important;
     border-bottom: none !important;
   }
-  .hana-footer .hana-widget-title::after {
+  .BrandName-footer .BrandName-widget-title::after {
     content: "" !important;
     display: block !important;
     width: 40px !important;
     height: 3px !important;
-    background: var(--hana-gold) !important;
+    background: var(--BrandName-gold) !important;
     border-radius: 3px !important;
     margin-top: 10px !important;
   }
 
   /* ---------- Quick links ---------- */
-  .hana-footer .menu-list {
+  .BrandName-footer .menu-list {
     line-height: 2.2 !important;
   }
-  .hana-footer .menu-list li {
+  .BrandName-footer .menu-list li {
     margin-bottom: 4px !important;
   }
-  .hana-footer .menu-list a {
+  .BrandName-footer .menu-list a {
     text-decoration: none !important;
     color: rgba(255,255,255,.82) !important;
     transition: all .25s ease !important;
     position: relative !important;
   }
-  .hana-footer .menu-list a:hover {
-    color: var(--hana-gold-soft) !important;
+  .BrandName-footer .menu-list a:hover {
+    color: var(--BrandName-gold-soft) !important;
     padding-right: 4px !important;
   }
 
   /* ---------- Contact ---------- */
-  .hana-footer .hana-contact-label {
+  .BrandName-footer .BrandName-contact-label {
     color: rgba(255,255,255,.65) !important;
     font-weight: 400 !important;
     font-size: .88rem !important;
     margin-bottom: 4px !important;
   }
-  .hana-footer .hana-contact-value {
+  .BrandName-footer .BrandName-contact-value {
     margin: 0 0 14px 0 !important;
   }
-  .hana-footer .hana-contact-value a {
+  .BrandName-footer .BrandName-contact-value a {
     color: #fff !important;
     text-decoration: none !important;
     font-weight: 600 !important;
     transition: color .25s ease !important;
   }
-  .hana-footer .hana-contact-value a:hover {
-    color: var(--hana-gold-soft) !important;
+  .BrandName-footer .BrandName-contact-value a:hover {
+    color: var(--BrandName-gold-soft) !important;
   }
 
   /* ---------- Bottom bar ---------- */
-  .hana-footer .hana-footer-bottom {
+  .BrandName-footer .BrandName-footer-bottom {
     background: #fff !important;
-    color: var(--hana-burgundy) !important;
+    color: var(--BrandName-burgundy) !important;
     padding: 20px 0 !important;
-    box-shadow: 0 -1px 0 var(--hana-line) inset !important;
+    box-shadow: 0 -1px 0 var(--BrandName-line) inset !important;
   }
-  .hana-footer .hana-footer-bottom .hana-bottom-label {
+  .BrandName-footer .BrandName-footer-bottom .BrandName-bottom-label {
     margin: 0 !important;
     font-weight: 800 !important;
     font-size: .82rem !important;
     text-transform: uppercase !important;
     letter-spacing: .5px !important;
-    color: var(--hana-muted, #8a7d74) !important;
+    color: var(--BrandName-muted, #8a7d74) !important;
   }
-  .hana-footer .hana-footer-bottom .hana-bottom-value {
+  .BrandName-footer .BrandName-footer-bottom .BrandName-bottom-value {
     margin: 2px 0 0 0 !important;
     font-weight: 700 !important;
-    color: var(--hana-burgundy) !important;
+    color: var(--BrandName-burgundy) !important;
   }
 
   @media (max-width: 767px) {
-    footer.hana-footer { border-radius: 22px 22px 0 0 !important; }
+    footer.BrandName-footer { border-radius: 22px 22px 0 0 !important; }
   }
 
 <style>
-  .hana-toast-container{
+  .BrandName-toast-container{
     position: fixed;
     top: 24px;
     left: 24px;
@@ -168,7 +168,7 @@
     font-family: 'VAZIRmatn', sans-serif;
   }
 
-  .hana-toast{
+  .BrandName-toast{
     background: #FFFFFF;
     border: 1px solid #E9DFD1;
     border-right: 4px solid #B08D57;
@@ -180,35 +180,35 @@
     font-weight: 700;
     text-align: center;
     box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    animation: hana-toast-in .35s ease;
+    animation: BrandName-toast-in .35s ease;
   }
 
-  .hana-toast.success{
+  .BrandName-toast.success{
     border-right-color: #2F6B3A;
     background: #F3FAF3;
   }
-  .hana-toast.error,
-  .hana-toast.danger{
+  .BrandName-toast.error,
+  .BrandName-toast.danger{
     border-right-color: #8A3B3B;
     background: #FBF2F2;
   }
-  .hana-toast.warning{
+  .BrandName-toast.warning{
     border-right-color: #B08D57;
     background: #FDF7EC;
   }
-  .hana-toast.info,
-  .hana-toast.debug{
+  .BrandName-toast.info,
+  .BrandName-toast.debug{
     border-right-color: #7A0C1E;
     background: #FBF7F1;
   }
 
-  @keyframes hana-toast-in{
+  @keyframes BrandName-toast-in{
     from{ opacity:0; transform: translateY(-8px); }
     to{ opacity:1; transform: translateY(0); }
   }
 
   @media (max-width: 480px){
-    .hana-toast-container{
+    .BrandName-toast-container{
       left: 12px;
       right: 12px;
       max-width: none;
@@ -219,15 +219,15 @@
 {% include 'shop/navbar.html' %}
 
   {% if messages %}
-  <div class="hana-toast-container" id="hana-toast-container">
+  <div class="BrandName-toast-container" id="BrandName-toast-container">
   {% for message in messages %}
-    <div class="alert hana-toast {{ message.tags }}" role="alert">{{ message }}</div>
+    <div class="alert BrandName-toast {{ message.tags }}" role="alert">{{ message }}</div>
   {% endfor %}
 </div>
 
 <script>
   setTimeout(function () {
-    var el = document.getElementById('hana-toast-container');
+    var el = document.getElementById('BrandName-toast-container');
     if (el) {
       el.style.transition = 'opacity .4s ease';
       el.style.opacity = '0';
@@ -245,27 +245,27 @@
 </body>
 
 
-<footer id="footer" class="hana-footer mt-5">
+<footer id="footer" class="BrandName-footer mt-5">
   <div class="container">
     <div class="row d-flex flex-wrap justify-content-between py-5">
 
       <!-- Logo + Social -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="footer-menu footer-menu-001 text-center">
-          <div class="footer-intro mb-2 hana-footer-logo">
+          <div class="footer-intro mb-2 BrandName-footer-logo">
             <a href="index.html">
-              <img src="{% static 'images/HANA.PNG' %}" alt="logo" width="70" height="70">
+              <img src="{% static 'images/BrandName.PNG' %}" alt="logo" width="70" height="70">
             </a>
           </div>
-          <h6 class="hana-footer-brand">لوازم آرایشی بهداشتی هانا</h6>
-          <p class="hana-footer-tagline mb-0">اورجینال، اصیل، همیشه در کنار شما</p>
+          <h6 class="BrandName-footer-brand">لوازم آرایشی بهداشتی هانا</h6>
+          <p class="BrandName-footer-tagline mb-0">اورجینال، اصیل، همیشه در کنار شما</p>
         </div>
       </div>
 
       <!-- Quick Links -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="footer-menu footer-menu-002">
-          <h5 class="widget-title hana-widget-title">لینک های سریع</h5>
+          <h5 class="widget-title BrandName-widget-title">لینک های سریع</h5>
           <ul class="menu-list list-unstyled fs-6">
             <li><a href="{% url 'shop:shop_index' %}">خانه</a></li>
             <li><a href="{% url 'shop:about' %}">درباره‌ی ما</a></li>
@@ -278,18 +278,18 @@
       <!-- Contact -->
       <div class="col-md-3 col-sm-6 mb-4">
         <div class="footer-menu footer-menu-004">
-          <h5 class="widget-title hana-widget-title">ارتباط با ما</h5>
+          <h5 class="widget-title BrandName-widget-title">ارتباط با ما</h5>
 
-          <p class="hana-contact-label">انتقادی پیشنهادی؟</p>
-          <h6 class="hana-contact-value">
-            <a href="mailto:hanaoonlineshop94@gmail.com">hanaonlineshop94@gmail.com</a>
+          <p class="BrandName-contact-label">انتقادی پیشنهادی؟</p>
+          <h6 class="BrandName-contact-value">
+            <a href="mailto:BrandNameoonlineshop94@gmail.com">BrandNameonlineshop94@gmail.com</a>
           </h6>
 
-          <p class="hana-contact-label">برای راهنمایی زنگ بزن</p>
-          <h6 class="hana-contact-value">
+          <p class="BrandName-contact-label">برای راهنمایی زنگ بزن</p>
+          <h6 class="BrandName-contact-value">
             <a href="tel:04134407631">04134407631</a>
           </h6>
-          <h6 class="hana-contact-value">
+          <h6 class="BrandName-contact-value">
             <a href="tel:09330134848">09330134848</a>
           </h6>
         </div>
@@ -298,16 +298,16 @@
   </div>
 
   <!-- Bottom Bar -->
-  <div class="hana-footer-bottom">
+  <div class="BrandName-footer-bottom">
     <div class="container">
       <div class="row text-center text-md-start">
         <div class="col-md-6 mb-2">
-          <h6 class="hana-bottom-label">توسعه‌داده شده توسط</h6>
-          <h6 class="hana-bottom-value">مهدی نصیرسلطانی</h6>
+          <h6 class="BrandName-bottom-label">توسعه‌داده شده توسط</h6>
+          <h6 class="BrandName-bottom-value">مهدی نصیرسلطانی</h6>
         </div>
         <div class="col-md-6">
-          <h6 class="hana-bottom-label">شماره تماس</h6>
-          <h6 class="hana-bottom-value">989911327751+</h6>
+          <h6 class="BrandName-bottom-label">شماره تماس</h6>
+          <h6 class="BrandName-bottom-value">989911327751+</h6>
         </div>
       </div>
     </div>

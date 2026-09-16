@@ -4,8 +4,8 @@ from decouple import config
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': config('DB_NAME', default='hanaproject_db'),
-        'USER': config('DB_USER', default='hana_app'),
+        'NAME': config('DB_NAME', default='BrandNameproject_db'),
+        'USER': config('DB_USER', default='BrandName_app'),
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST', default='localhost'),
         'PORT': config('DB_PORT', default='3306'),

@@ -2,18 +2,18 @@
 
 <style>
   :root {
-    --hana-burgundy: #6d1128;
-    --hana-burgundy-deep: #4a0b1c;
-    --hana-rose: #b3364f;
-    --hana-gold: #c9a15a;
-    --hana-gold-soft: #e9d8b6;
-    --hana-cream: #faf6f0;
-    --hana-ink: #2b2320;
-    --hana-line: #ece3d8;
+    --BrandName-burgundy: #6d1128;
+    --BrandName-burgundy-deep: #4a0b1c;
+    --BrandName-rose: #b3364f;
+    --BrandName-gold: #c9a15a;
+    --BrandName-gold-soft: #e9d8b6;
+    --BrandName-cream: #faf6f0;
+    --BrandName-ink: #2b2320;
+    --BrandName-line: #ece3d8;
   }
 
-  nav.navbar.hana-navbar {
-    background: linear-gradient(90deg, var(--hana-burgundy) 0%, var(--hana-burgundy-deep) 100%) !important;
+  nav.navbar.BrandName-navbar {
+    background: linear-gradient(90deg, var(--BrandName-burgundy) 0%, var(--BrandName-burgundy-deep) 100%) !important;
     color: #fff !important;
     box-shadow: 0 4px 18px rgba(74, 11, 28, 0.18) !important;
     border-bottom: none !important;
@@ -21,111 +21,111 @@
     transition: transform .35s ease, box-shadow .35s ease !important;
     font-family: 'VAZIRmatn', sans-serif !important;
   }
-  nav.navbar.hana-navbar.nav-hidden {
+  nav.navbar.BrandName-navbar.nav-hidden {
     transform: translateY(-100%) !important;
   }
 
   /* ---------- Logo ---------- */
-  nav.navbar.hana-navbar .navbar-brand img {
+  nav.navbar.BrandName-navbar .navbar-brand img {
     border-radius: 50% !important;
-    border: 2px solid var(--hana-gold-soft) !important;
+    border: 2px solid var(--BrandName-gold-soft) !important;
     box-shadow: 0 3px 10px rgba(0,0,0,0.25) !important;
     transition: transform .25s ease !important;
   }
-  nav.navbar.hana-navbar .navbar-brand:hover img {
+  nav.navbar.BrandName-navbar .navbar-brand:hover img {
     transform: scale(1.06) !important;
   }
 
   /* ---------- Toggler ---------- */
-  nav.navbar.hana-navbar .navbar-toggler {
+  nav.navbar.BrandName-navbar .navbar-toggler {
     border: 1px solid rgba(255,255,255,.4) !important;
     background: rgba(255,255,255,.12) !important;
     border-radius: 10px !important;
     padding: 7px 11px !important;
     box-shadow: none !important;
   }
-  nav.navbar.hana-navbar .navbar-toggler:focus {
+  nav.navbar.BrandName-navbar .navbar-toggler:focus {
     box-shadow: 0 0 0 3px rgba(201,161,90,.35) !important;
   }
-  nav.navbar.hana-navbar .navbar-toggler-icon {
+  nav.navbar.BrandName-navbar .navbar-toggler-icon {
     filter: invert(1) !important;
   }
 
   /* ---------- Offcanvas ---------- */
-  .hana-offcanvas {
-    background: var(--hana-cream) !important;
+  .BrandName-offcanvas {
+    background: var(--BrandName-cream) !important;
     font-family: 'VAZIRmatn', sans-serif !important;
   }
-  .hana-offcanvas .offcanvas-header {
-    background: var(--hana-burgundy) !important;
+  .BrandName-offcanvas .offcanvas-header {
+    background: var(--BrandName-burgundy) !important;
     color: #fff !important;
     padding: 18px 22px !important;
   }
-  .hana-offcanvas .offcanvas-header .offcanvas-title {
+  .BrandName-offcanvas .offcanvas-header .offcanvas-title {
     font-weight: 800 !important;
     letter-spacing: .5px !important;
     color: #fff !important;
   }
-  .hana-offcanvas .offcanvas-body {
+  .BrandName-offcanvas .offcanvas-body {
     padding: 22px !important;
   }
 
   /* ---------- Nav links (pill style) ---------- */
-  .hana-navbar .hana-nav-link,
-  .hana-offcanvas .hana-nav-link {
+  .BrandName-navbar .BrandName-nav-link,
+  .BrandName-offcanvas .BrandName-nav-link {
     display: inline-block !important;
     font-family: 'VAZIRmatn', sans-serif !important;
-    color: var(--hana-burgundy) !important;
+    color: var(--BrandName-burgundy) !important;
     background: #fff !important;
-    border: 1px solid var(--hana-line) !important;
+    border: 1px solid var(--BrandName-line) !important;
     padding: 8px 18px !important;
     border-radius: 999px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
     transition: all .25s ease !important;
   }
-  .hana-navbar .hana-nav-link:hover,
-  .hana-offcanvas .hana-nav-link:hover {
-    background: var(--hana-burgundy) !important;
+  .BrandName-navbar .BrandName-nav-link:hover,
+  .BrandName-offcanvas .BrandName-nav-link:hover {
+    background: var(--BrandName-burgundy) !important;
     color: #fff !important;
-    border-color: var(--hana-burgundy) !important;
+    border-color: var(--BrandName-burgundy) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 6px 16px rgba(74,11,28,.18) !important;
   }
 
   /* Dropdown toggle keeps pill look, arrow included */
-  .hana-offcanvas .dropdown-toggle::after {
+  .BrandName-offcanvas .dropdown-toggle::after {
     vertical-align: middle !important;
   }
 
   /* Dropdown menu */
-  .hana-offcanvas .dropdown-menu {
+  .BrandName-offcanvas .dropdown-menu {
     background: #fff !important;
-    border: 1px solid var(--hana-line) !important;
+    border: 1px solid var(--BrandName-line) !important;
     border-radius: 14px !important;
     box-shadow: 0 10px 30px rgba(74,11,28,.14) !important;
     padding: 10px !important;
     margin-top: 8px !important;
   }
-  .hana-offcanvas .dropdown-menu .dropdown-item.hana-nav-link {
+  .BrandName-offcanvas .dropdown-menu .dropdown-item.BrandName-nav-link {
     width: 100% !important;
     margin-bottom: 6px !important;
     text-align: center !important;
   }
-  .hana-offcanvas .dropdown-menu .dropdown-item.hana-nav-link:last-child {
+  .BrandName-offcanvas .dropdown-menu .dropdown-item.BrandName-nav-link:last-child {
     margin-bottom: 0 !important;
   }
 
   /* Close button */
-  .hana-offcanvas .btn-close {
+  .BrandName-offcanvas .btn-close {
     opacity: .9 !important;
   }
 
   /* ---------- Cart button ---------- */
-  .hana-navbar .hana-cart-link {
+  .BrandName-navbar .BrandName-cart-link {
     font-family: 'VAZIRmatn', sans-serif !important;
     color: #fff !important;
-    background: var(--hana-gold) !important;
+    background: var(--BrandName-gold) !important;
     padding: 9px 22px !important;
     border-radius: 999px !important;
     font-weight: 700 !important;
@@ -136,13 +136,13 @@
     align-items: center !important;
     gap: 8px !important;
   }
-  .hana-navbar .hana-cart-link:hover {
+  .BrandName-navbar .BrandName-cart-link:hover {
     background: #b78a3f !important;
     transform: translateY(-2px) !important;
     color: #fff !important;
   }
-  .hana-navbar .wishlist-count {
-    background: var(--hana-burgundy-deep) !important;
+  .BrandName-navbar .wishlist-count {
+    background: var(--BrandName-burgundy-deep) !important;
     color: #fff !important;
     border-radius: 50% !important;
     min-width: 22px !important;
@@ -156,7 +156,7 @@
   }
 </style>
 
-<nav class="navbar navbar-expand-lg hana-navbar align-items-center">
+<nav class="navbar navbar-expand-lg BrandName-navbar align-items-center">
   <div class="container-fluid">
     <div class="row justify-content-between align-items-center w-100">
 
@@ -173,7 +173,7 @@
           aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end hana-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-end BrandName-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">منو</h5>
             <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
@@ -184,21 +184,21 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 gap-2 gap-md-3 pe-3">
               <li class="nav-item">
-                <a class="nav-link hana-nav-link" href="{% url 'shop:shop_index' %}">
+                <a class="nav-link BrandName-nav-link" href="{% url 'shop:shop_index' %}">
                   خانه
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link hana-nav-link" href="{% url 'shop:about' %}">درباره ما</a>
+                <a class="nav-link BrandName-nav-link" href="{% url 'shop:about' %}">درباره ما</a>
               </li>
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:search' %}">جست و جو</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:search' %}">جست و جو</a></li>
               {% if user.is_admin %}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle hana-nav-link" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle BrandName-nav-link" href="#" id="dropdownBlog" data-bs-toggle="dropdown"
                   aria-haspopup="true" aria-expanded="false">سفارشات</a>
                 <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownBlog">
-                  <li><a href="{% url 'payment:shipped_dash' %}" class="dropdown-item item-anchor hana-nav-link">سفارشات ارسال شده</a></li>
-                  <li><a href="{% url 'payment:not_shipped_dash' %}" class="dropdown-item item-anchor hana-nav-link">سفارشات ارسال نشده</a></li>
+                  <li><a href="{% url 'payment:shipped_dash' %}" class="dropdown-item item-anchor BrandName-nav-link">سفارشات ارسال شده</a></li>
+                  <li><a href="{% url 'payment:not_shipped_dash' %}" class="dropdown-item item-anchor BrandName-nav-link">سفارشات ارسال نشده</a></li>
                 </ul>
               </li>
               {% endif %}
@@ -206,12 +206,12 @@
 
 
               {% if user.is_authenticated %}
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:update_info' %}">تغییر اطلاعات حساب</a></li>
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:update' %}">تغییر پروفایل</a></li>
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:logout' %}">خروج</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:update_info' %}">تغییر اطلاعات حساب</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:update' %}">تغییر پروفایل</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:logout' %}">خروج</a></li>
               {% else %}
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:login' %}">ورود</a></li>
-              <li class="nav-item"><a class="nav-link hana-nav-link" href="{% url 'shop:register' %}">ثبت نام</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:login' %}">ورود</a></li>
+              <li class="nav-item"><a class="nav-link BrandName-nav-link" href="{% url 'shop:register' %}">ثبت نام</a></li>
               {% endif %}
             </ul>
           </div>
@@ -222,7 +222,7 @@
       <div class="col-3 col-lg-auto">
         <ul class="list-unstyled d-flex m-0">
           <li class="d-none d-lg-block">
-            <a href="{% url 'cart:cart_summary' %}" class="mx-3 hana-cart-link">
+            <a href="{% url 'cart:cart_summary' %}" class="mx-3 BrandName-cart-link">
               سبد خرید <span class="wishlist-count" id="cart_quantity">{{ cart|length }}</span>
             </a>
           </li>
